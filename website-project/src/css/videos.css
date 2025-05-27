@@ -1,0 +1,95 @@
+/* Video Container Styling */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    border: 2px solid #9400d3; /* Violet border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+video:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.video-controls {
+    margin-top: 0.5rem;
+}
+
+.video-controls button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #9400d3; /* Violet background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.video-controls button:hover {
+    background-color: #ff00ff; /* Pink background on hover */
+}
+
+/* Pop-out Video Styling */
+.video-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    display: none;
+}
+
+.video-popup video {
+    width: 100%;
+    max-width: 800px;
+    border: none;
+}
+
+.video-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff00ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Back to Home Button Styling */
+.back-to-home {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #9400d3; /* Violet background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #ff00ff; /* Pink background on hover */
+    color: #000; /* Black text on hover */
+}

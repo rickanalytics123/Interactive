@@ -1,0 +1,315 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #ff00ff; /* Pink text */
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: #000; /* Black background */
+    color: #ff00ff; /* Pink text */
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #9400d3; /* Violet outline */
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #9400d3; /* Violet glow effect */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #ff00ff; /* Pink text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #9400d3; /* Violet outline */
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #9400d3; /* Violet background on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: #000; /* Black background */
+    z-index: 1000;
+    padding-top: 2rem;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.navbar .nav-link {
+    color: #ff00ff; /* Pink text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #9400d3; /* Violet on hover */
+}
+
+.navbar .nav-link.active {
+    background-color: #ff00ff; /* Pink background for active link */
+    color: #000; /* Black text for active link */
+}
+
+/* Show Drawer Menu */
+.navbar.open {
+    left: 0; /* Slide in from the left */
+}
+
+/* Hero Section */
+.hero {
+    background: url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: #9400d3; /* Violet background */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #ff00ff; /* Pink background on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Main Layout for Sections */
+main {
+    display: block; /* Revert to block layout */
+    padding: 2rem;
+}
+
+/* Section Styling */
+section {
+    background-color: #000; /* Black background */
+    color: #ff00ff; /* Pink text */
+    border: 2px solid #9400d3; /* Violet outline */
+    border-radius: 8px;
+    box-shadow: 0 0 10px #9400d3; /* Violet glow effect */
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 2rem; /* Add spacing between sections */
+}
+
+/* Image Styling */
+.section-image {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit the maximum width */
+    height: auto; /* Adjust height automatically */
+    object-fit: cover; /* Maintain aspect ratio */
+    border: 2px solid #9400d3; /* Violet outline for images */
+    border-radius: 8px;
+    margin: 1rem auto; /* Center the image */
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    color: #ff00ff; /* Pink text */
+    text-decoration: none;
+    border: 2px solid #9400d3; /* Violet outline */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #9400d3; /* Violet background on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Center Buttons */
+section .btn {
+    display: inline-block;
+    margin: 1rem auto;
+}
+
+/* Footer Styling */
+footer {
+    background: #000; /* Black background */
+    color: #ff00ff; /* Pink text */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 2px solid #9400d3; /* Violet outline */
+}
+
+/* Back to Home Link Styling */
+.back-to-home {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+}
+
+/* Top Button Styling */
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: transparent;
+    color: #ff00ff; /* Pink text */
+    border: 2px solid #9400d3; /* Violet outline */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #9400d3; /* Violet glow effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-button:hover {
+    background-color: #9400d3; /* Violet background on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Back to Home Button Styling */
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    background-color: transparent;
+    color: #ff00ff; /* Pink text */
+    border: 2px solid #9400d3; /* Violet outline */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #9400d3; /* Violet glow effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #9400d3; /* Violet background on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Hamburger Icon Styling */
+.menu-icon {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ff00ff; /* Pink */
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    main {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .section-image {
+        max-width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Slightly smaller buttons on smaller screens */
+        padding: 0.6rem 1.2rem;
+    }
+
+    .menu-icon {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    .navbar {
+        display: block;
+    }
+}

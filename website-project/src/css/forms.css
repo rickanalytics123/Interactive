@@ -1,0 +1,73 @@
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 2px solid #9400d3; /* Violet border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Custom Submit Button Styling */
+.custom-submit-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #9400d3; /* Violet background */
+    color: #fff; /* White text */
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-submit-btn:hover {
+    background-color: #ff00ff; /* Pink background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.custom-submit-btn:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+/* Back to Home Button Styling */
+.back-to-home {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #9400d3; /* Violet background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #ff00ff; /* Pink background on hover */
+    color: #000; /* Black text on hover */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Global styles -->
+    <link rel="stylesheet" href="../css/forms.css"> <!-- Page-specific styles -->
+</head>
+<body>
+    <header>
+        <h1>User Input Forms</h1>
+        <nav>
+            <ul>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="if-wins-gifts.html">If Wins Gifts</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Feedback Form</h2>
+            <form id="feedback-form" action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="POST" target="_blank">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="entry.1234567890" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="entry.0987654321" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="entry.1122334455" required></textarea>
+                
+                <button type="submit" class="custom-submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Website Name</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

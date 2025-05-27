@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/videos.css"> <!-- Page-specific styles -->
+</head>
+<body>
+    <header>
+        <h1>Video Collection</h1>
+        <nav>
+            <ul>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="if-wins-gifts.html">Win Gifts</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Featured Videos</h2>
+            <div class="video-container">
+                <!-- Video 1 (Local Video) -->
+                <div class="video-wrapper">
+                    <video id="video1" src="../assets/videos/sample.mp4" controls></video>
+                    <div class="video-controls">
+                        <button onclick="playVideo('video1')">Play</button>
+                        <button onclick="pauseVideo('video1')">Pause</button>
+                    </div>
+                </div>
+
+                <!-- Video 2 (YouTube Video using iframe) -->
+                <div class="video-wrapper">
+                    <iframe id="video2" src="https://www.youtube.com/embed/VQRLujxTm3c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-controls">
+                        <button onclick="playIframe('video2')">Play</button>
+                        <button onclick="pauseIframe('video2')">Pause</button>
+                    </div>
+                </div>
+
+                <!-- Video 3 (Local Video) -->
+                <div class="video-wrapper">
+                    <video id="video3" src="../assets/videos/video3.mp4" controls></video>
+                    <div class="video-controls">
+                        <button onclick="playVideo('video3')">Play</button>
+                        <button onclick="pauseVideo('video3')">Pause</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+        <!-- Back to Home Button -->
+        <a href="../index.html" class="btn back-to-home">Back to Home</a>
+    </footer>
+    <script src="../js/videos.js"></script>
+</body>
+</html>
