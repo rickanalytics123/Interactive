@@ -1,5 +1,7 @@
 # Website Project
+
 LINK: https://rickanalytics123.github.io/Interactive/#featured
+
 This project is a comprehensive website that includes various pages such as Games, If Wins Gifts, Forms, Videos, and a Blog focused on the latest technologies. Below are the details of the project structure and its components.
 
 ## Project Structure
